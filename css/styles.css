@@ -21,6 +21,13 @@ body {
 ul {
 	list-style: none;
 }
+nav,
+ul,
+li,
+span,
+address {
+	display: inline-block;
+}
 /*-------Верхня лінія--------*/
 /*-------1600*80--------*/
 .logo {
@@ -76,7 +83,14 @@ span.head {
 	color: var(--accent-color);
 }
 /*------- Шапка--------- */
-/*-------1600*600--------*/
+/*-------1700*600--------*/
+header {
+}
+.container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
 .hero {
 	background-color: var(--foot-bg-color);
 }
