@@ -28,6 +28,9 @@ span,
 address {
 	display: inline-block;
 }
+img {
+	display: block;
+}
 /*-------Верхня лінія--------*/
 /*-------1600*80--------*/
 .logo {
@@ -85,34 +88,53 @@ span.head {
 /*------- Шапка--------- */
 /*-------1700*600--------*/
 header {
+	min-height: 80px;
+	border: 1px solid var(--line-color);
 }
 .container {
 	width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+	}
+.header-conteiner {
+
 }
 .hero {
+	min-height: 600px;
+	padding-top: 200px;
+	padding-bottom: 200px;
 	background-color: var(--foot-bg-color);
 }
+
 .hero-title {
+	width: 696px;
+	height: 120px;
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
 	color: var(--main-color);
 }
 button {
 	cursor: pointer;
 }
 .hero-btn {
+	width: 200px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
 	font-family: inherit;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.87;
-	display: flex;
+	display: block;
 	align-items: center;
 	text-align: center;
 	letter-spacing: 0.06em;
@@ -123,9 +145,14 @@ button {
 .hero-btn:focus {
 	background-color: var(--btn-hover-color);
 }
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
 /*--------Особливості--------*/
 /*-------1170*101--------*/
 .features-title {
+	margin-bottom: 10px;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
@@ -134,6 +161,8 @@ button {
 	color: var(--second-color);
 }
 .features-text {
+	width: 270px;
+	min-height: 75px;
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
@@ -141,7 +170,9 @@ button {
 }
 /*-------Чим ми займаємось-------*/
 /*-------1170*386--------*/
+
 .about-title {
+	margin-bottom: 50px;
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
@@ -149,12 +180,16 @@ button {
 	letter-spacing: 0.03em;
 	color: var(--second-color);
 }
+
+}
 /*--------Наша команда--------*/
 /*-------1600*648--------*/
 .team {
 	background-color: var(--second-bg-color);
+	min-height: 648px;
 }
 .team-title {
+	margin-bottom: 50px;
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
@@ -163,6 +198,8 @@ button {
 	color: var(--second-color);
 }
 .team-name {
+	margin-top: 30px;
+	margin-bottom: 10px;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.19;
@@ -182,6 +219,7 @@ button {
 /*-------1600*252--------*/
 footer {
 	background-color: var(--foot-bg-color);
+	min-height: 252px;
 }
 span.foot {
 	color: var(--main-color);
