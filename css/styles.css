@@ -25,8 +25,7 @@ ul {
 ul,
 li,
 nav,
-span,
-address {
+span {
 	display: inline-block;
 }
 
@@ -79,7 +78,6 @@ span.head {
 }
 .header-conteiner {
 	align-items: center;
-	justify-content: ;
 }
 
 .auth-header,
@@ -133,8 +131,7 @@ header {
 	padding-right: 15px;
 	margin: 0 auto;
 }
-.header-conteiner {
-}
+
 .hero {
 	min-height: 600px;
 	padding-top: 200px;
@@ -281,11 +278,16 @@ button {
 footer {
 	background-color: var(--foot-bg-color);
 	min-height: 252px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 span.foot {
 	color: var(--main-color);
 }
+
 .foot-link {
+	display: block;
+	margin-bottom: 9px;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
@@ -295,6 +297,8 @@ span.foot {
 	color: var(--main-color);
 }
 .foot-mail {
+	display: block;
+	margin-bottom: 9px;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
@@ -304,6 +308,7 @@ span.foot {
 	color: var(--link-color);
 }
 .foot-tel {
+	display: block;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
@@ -319,6 +324,13 @@ span.foot {
 .foot-mail:focus,
 .foot-tel:focus {
 	color: var(--accent-color);
+}
+
+.footer-address {
+	display: flex;
+	flex-wrap: wrap;
+	width: 231px;
+	margin-top: 20px;
 }
 /*------------Портфоліо------------*/
 
@@ -358,9 +370,7 @@ span.foot {
 	display: flex;
 	flex-wrap: wrap;
 }
-.item-img {
-	margin-bottom: 20px;
-}
+
 .project .item {
 	margin-right: 30px;
 }
@@ -371,6 +381,7 @@ span.foot {
 .item:nth-child(3n) {
 	margin-right: 0;
 }
+
 .project-title {
 	margin-bottom: 4px;
 	font-weight: bold;
@@ -387,4 +398,13 @@ span.foot {
 	letter-spacing: 0.03em;
 	text-decoration: inherit;
 	color: var(--text-color);
+}
+.project-card {
+	background: #ffffff;
+	border: 1px solid #eeeeee;
+	box-sizing: border-box;
+	border-top: none;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 11px;
 }
