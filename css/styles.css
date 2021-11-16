@@ -51,6 +51,7 @@ span.head {
 	color: var(--second-logo-color);
 }
 .site-nav {
+	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
 	font-weight: 500;
@@ -123,7 +124,7 @@ span.head {
 }
 header {
 	min-height: 80px;
-	border: 1px solid var(--line-color);
+	border-bottom: 1px solid var(--line-color);
 }
 .container {
 	width: 1200px;
@@ -367,6 +368,7 @@ span.foot {
 .project {
 	display: flex;
 	flex-wrap: wrap;
+	margin-right: -30px;
 }
 
 .project > .item {
